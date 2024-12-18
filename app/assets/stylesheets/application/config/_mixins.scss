@@ -162,3 +162,57 @@
 
   @return 0 $primary-offset $blur $color;
 }
+
+/*------------------------------------*\
+** TITLES
+\*------------------------------------*/
+
+@mixin section-title-medium {
+  color: $belize-hole;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@mixin section-title-big {
+color: $belize-hole;
+font-size: 64px;
+font-weight: 400;
+text-align: center;
+}
+
+@mixin subtitle {
+color: $black;
+font-size: 24px;
+font-weight: 700;
+line-height: 120%;
+text-align: start;
+font-family: "Raleway", sans-serif;
+}
+
+@mixin subtitle-big {
+color: $black;
+font-size: 36px;
+font-weight: 700;
+line-height: 120%;
+text-align: start;
+font-family: "Raleway", sans-serif;
+}
+
+/*------------------------------------*\
+** PARAGRAPHS
+\*------------------------------------*/
+
+@mixin paragraph-normal{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */ 
+}
+
+@mixin paragraph-big{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}

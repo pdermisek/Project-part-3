@@ -1,33 +1,142 @@
 <% content_for :image, image_url(@space.featured_image.image_url(:medium))%>
 <% content_for :description, seo_description((@space.description.strip_tags.truncate(120, separator: ' '))) %>
 <% content_for :title, "Stara Pekara - " + @space.name %>
-<% unless @space.space_images.blank? %>
-  <% @space.space_images.each do |image| %>
-    <%= link_to image_tag(image.image), image_url(image.image), data: {lightbox: 'space', title: @space.name} %>
-  <% end %>
-<% end %>
-<h1>
-  <%= @space.name %>
-</h1>
-<p>
-  <%= @space.description.html_safe %></p>
-<p>
-  <span><%= surface(@space.surface_area) %></span>
-  na raspolaganju
-</p>
-<% if  @space.bookable %>
-  <p>
-    <span><%= humanized_money_with_symbol(@space.book_price) %></span>
-    po terminu
-  </p>
-<% end %>
-<% if  @space.rentable %>
-  <p><span><%= humanized_money_with_symbol(@space.rent_price) %></span>
-    mjesečno</p>
-<% end %>
-<% if @space.available %>
-  <%= link_to t('space.rent_monthly', price: humanized_money_with_symbol(@space.rent_price)), new_space_rent_request_space_path(@space), class: 'section__button' if @space.rentable %>
-  <%= link_to t('space.rent_hourly', price: humanized_money_with_symbol(@space.book_price)), booking_general_space_path(@space), class: 'section__button' if @space.bookable %>
-<% else %>
-  <%= t('space.unavailable') %>
-<% end %>
+
+<style>
+
+
+.owl-nav{
+  display: none;
+}
+ 
+  .owl-item.active.center {
+     /* -webkit-transform: scale(1.8);
+     transform: scale(1.8); */
+
+    
+
+     transform: scale(1.8, 1.25);
+     z-index: 500;
+
+ }
+ .item{
+   padding: 85px;
+   margin: 85px;
+ }
+
+ .owl-carousel .owl-item img {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container{
+    width: 99.19vw;
+    /* padding: 0 40px 0 40px; */
+    overflow: hidden;
+}
+ </style>
+
+<div class="container">
+  <div class="slide-container owl-theme owl-carousel carousel">
+    <% unless @space.space_images.blank? %>
+    <% @space.space_images.each do |image| %>
+    <div class="item">
+      <%= link_to image_tag(image.image), image_url(image.image), data: {lightbox: 'space', title: @space.name} %>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+
+
+<div class="space-container">
+  <h1 class="space-container__title">
+    <%= @space.name %>
+  </h1>
+
+  <div class="space-description">
+    <!-- <p>
+      <%= @space.description.html_safe %>
+    </p> -->
+
+
+    <p>
+      I'm Brian, and so's my wife! The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Are you suggesting coconuts migrate?
+    </p>
+
+    <p>
+      Come and see the violence inherent in the system. Help! Help! I'm being repressed! What is the capital of Assyria? Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.
+    </p>
+
+    <p>
+      Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
+    </p>
+
+      <div class="info-container">
+        <div class="info-container__data">
+          <% if  @space.bookable %>
+            <p class="info">
+              <span class="info__number"><%= humanized_money_with_symbol(@space.book_price) %></span>
+              <span class="info__type">
+                po terminu
+              </span>
+            </p>
+          <% end %>
+        </div>
+
+        <div class="info-container__data">
+          <p class="info">
+            <span class="info__number"><%= surface(@space.surface_area) %></span>
+            <span class="info__type">
+              na raspolaganju
+            </span>
+          </p>
+        </div>
+
+        <!-- <div class="info-container__data">
+          <% if  @space.rentable %>
+            <p><span><%= humanized_money_with_symbol(@space.rent_price) %></span> mjesečno</p>
+          <% end %>
+        </div> -->
+      </div>
+
+
+
+  </div>
+
+  <!-- <div class="space-container__button">
+    <% if @space.available %>
+      <%= link_to t('space.rent_monthly', price: humanized_money_with_symbol(@space.rent_price)), new_space_rent_request_space_path(@space), class: 'section__button' if @space.rentable %>
+      <%= link_to t('space.rent_hourly', price: humanized_money_with_symbol(@space.book_price)), booking_general_space_path(@space), class: 'section__button' if @space.bookable %>
+    <% else %>
+      <%= t('space.unavailable') %>
+    <% end %>
+  </div>
+</div> -->
+
+  <div class=" space-container__button">
+      <p class="section__button">iznajmi prostor</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      center: true,
+      dots: false,
+      nav:false,
+      responsive:{
+          0:{
+              items:1,
+          },
+          600:{
+              items:3,
+          },
+          1000:{
+              items:1.75,
+          }
+      }
+  })
+    </script>

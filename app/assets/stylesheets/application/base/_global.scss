@@ -11,6 +11,7 @@ html {
 
 body {
   box-sizing: border-box;
+  display: grid;
 
   &.offset-top {
     margin-top: 4rem;
@@ -21,6 +22,20 @@ body {
   }
 }
 
+hr {
+  color: $white--true;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Source Sans Serif', sans-serif;
+}
+
+
+
+
 main {
   min-height: calc(100vh - 70px);
 }
@@ -29,4 +44,20 @@ main {
 *:before,
 *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  color: $belize-hole;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 0px;
 }

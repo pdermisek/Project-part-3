@@ -53,6 +53,13 @@
 \*------------------------------------*/
 
 @import
+  "layout/spaces",
+  "layout/contact",
+  "layout/news",
+  "layout/legal",
+  "layout/faq",
+  "layout/documents",
+  "layout/about",
   "layout/grid",
   "layout/header",
   "layout/footer",
@@ -79,6 +86,8 @@
 \*------------------------------------*/
 
 @import
+  "vendors/lightbox",
+  "vendors/lightgallery",
   "vendors/animations",
   "vendors/ui_datepicker",
   "vendors/bamboolab_cookies",

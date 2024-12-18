@@ -38,3 +38,100 @@ $(window).scroll(function() {
         }
     }
 });
+
+$(document).ready(function () {
+  $('.nav-button').click(function () {
+
+      $('.sticky-header').toggleClass('sticky-header--active');
+      // $('.nav-button').toggleClass('nav-button--active')
+      $('.nav-button__svg').toggleClass('nav-button__svg--active')
+
+  });
+});
+
+
+//CLOSES NAV ON link click
+$(document).ready(function () {
+  $('.slide-nav__link').click(function () {
+
+      $('.sticky-header').toggleClass('sticky-header--active');
+      // $('.nav-button').toggleClass('nav-button--active')
+      $('.nav-button__svg').toggleClass('nav-button__svg--active')
+
+
+      var originalPosition = true;
+
+      if($('.nav-button').hasClass('.nav-button--extended')){
+        $('.nav-button').animate({ right: '0px' },"300ms", 'easeOutCubic', function () {});
+        $('.nav-button').removeClass('.nav-button--extended')
+
+      } else {
+        $('.nav-button').animate({ right: '342px' },"300ms", 'easeOutCubic', function () {});
+      }
+      originalPosition = !originalPosition; 
+  });
+});
+
+
+
+
+$(document).ready(function () {
+
+  var originalPosition = true;
+
+  $('.nav-button').click(function () {
+    $('.nav-button').toggleClass('.nav-button--extended')
+
+      if ($('.nav-button').hasClass('.nav-button--extended')) {
+          $(this).animate({ right: '342px' },"300ms", 'easeOutCubic', function () {});
+
+      } else {
+          $(this).animate({ right: '0px' },"300ms", 'easeOutCubic', function () {});
+          $(this).removeClass('.nav-button--extended')
+
+      }
+      
+      originalPosition = !originalPosition; 
+  });
+});
+
+
+//sticky home button
+
+$(document).ready(function() {
+  var navLogo = $(".nav-logo-wrapper");
+  var sticky = navLogo.offset().top;
+
+  $(window).scroll(function() {
+      if ($(window).scrollTop() > sticky) {
+          navLogo.addClass("nav-logo-wrapper--sticky");
+      } else {
+          navLogo.removeClass("nav-logo-wrapper--sticky");
+      }
+  });
+});
+
+
+
+
+
+//HOME TO TOP
+
+
+$(document).ready(function() {
+  var scrollToTopBtn = $(".nav-logo-button");
+  var rootElement = $("html, body");
+
+  scrollToTopBtn.click(function() {
+    rootElement.animate({ scrollTop: 0 }, "slow");
+  });
+});
+
+
+//HEADER DOWN
+
+  $(document).ready(function() {
+    $(".header__button").click(function() {
+        $("#to-main")[0].scrollIntoView({ behavior: 'smooth' });
+    });
+});
