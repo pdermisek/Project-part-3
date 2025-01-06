@@ -20,7 +20,8 @@
 
  }
  .item{
-   padding: 85px;
+   padding: 100px;
+   padding-top:20px ;
    margin: 85px;
  }
 
@@ -29,8 +30,8 @@
 }
 
 .container{
-    width: 99.19vw;
-    /* padding: 0 40px 0 40px; */
+    width: 99vw;
+    /* padding: 0 0px 0 0px; */
     overflow: hidden;
 }
  </style>
@@ -79,7 +80,7 @@
             <p class="info">
               <span class="info__number"><%= humanized_money_with_symbol(@space.book_price) %></span>
               <span class="info__type">
-                po terminu
+                po satu
               </span>
             </p>
           <% end %>

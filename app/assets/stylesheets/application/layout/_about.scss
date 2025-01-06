@@ -1,10 +1,10 @@
-about {
-    padding: 60px 0;
+.about {
+    padding: 3.75rem 0 3.75rem 0;
     display: grid;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-row-gap: 24px;
+    grid-row-gap: 1.5rem;
     // grid-template-columns: repeat(12, calc(100% / 12));
     grid-template-columns: repeat(17, calc(100% / 17));
   
@@ -14,7 +14,7 @@ about {
       align-items: center;
       // grid-column: span 6/10;
       grid-column: span 3/11;
-      grid-row-gap: 16px;
+      grid-row-gap: 1rem;
   
       @include section-title-medium;
     }
@@ -25,14 +25,18 @@ about {
       align-items: center;
       // grid-column: span 8/11;
       grid-column: span 9/14;
-      grid-row-gap: 16px;
-  
+      grid-row-gap: 1rem;
       color: #000;
       font-family: Source Sans Pro;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%; /* 28.8px */
+
+      p {
+        margin-bottom: 0.5rem;
+        width: 58.875rem;
+      }
   
       .accordion {
         &__item {
@@ -60,17 +64,17 @@ about {
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 58.875rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: span 9/14;
-    grid-column-gap: 24px;
+    grid-column-gap: 1.5rem;
   
     &__image {
       // width: 100%;
       // height: 100%;
   
-      width: 220px;
-      height: 220px;
+      width: 13.75rem;
+      height: 13.75rem;
       position: relative;
       display: inline-block;
       grid-template-rows: 1fr 1fr;
@@ -80,8 +84,8 @@ about {
         // width: 100%;
         // height: 200%;
   
-        width: 220px;
-        height: 220px;
+        width: 13.75rem;
+        height: 13.75rem;
         object-fit: cover;
       }
   
@@ -103,7 +107,7 @@ about {
     color: #FFF;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

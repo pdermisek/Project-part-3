@@ -19,7 +19,7 @@ button, .btn {
 
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0px 0px transparent;
+    box-shadow: 0 0 0rem 0rem transparent;
   }
 
   &:hover {
@@ -164,7 +164,7 @@ button, .btn {
 .btn--ghost {
   background-color: transparent;
   color: $color-primary;
-  border: 1px solid $color-primary;
+  border: 0.063rem solid $color-primary;
 
   &:focus, &:active, &:hover {
     background-color: lighten($color-primary, 5%);
@@ -181,7 +181,7 @@ button, .btn {
 .btn--underline {
   background-color: transparent;
   color: $black;
-  border-bottom: 2px solid $black;
+  border-bottom: 0.125rem solid $black;
 
   border-radius: 0;
   padding-left: 0;
@@ -190,11 +190,11 @@ button, .btn {
   margin-bottom: 1rem;
 
   &:active {
-    border-bottom: 2px solid lighten($color-primary, 5%);
+    border-bottom: 0.125rem solid lighten($color-primary, 5%);
   }
 
   &:focus, &:hover {
-    border-bottom: 2px solid $color-primary;
+    border-bottom: 0.125rem solid $color-primary;
   }
 }
 
@@ -233,24 +233,24 @@ button, .btn {
       content: '';
       margin-left: 0.5rem;
       width: 0.5rem;
-      border-bottom: 4px solid $color-primary;
+      border-bottom: 0.25rem solid $color-primary;
       display: inline-block;
       vertical-align: middle;
       transition: $transition-time;
-      margin-top: -2px;
+      margin-top: -0.125rem;
     }
 
     &::after {
       content: '';
       width: 0.5rem;
       height: 0.5rem;
-      border-bottom: 3px solid $color-primary;
-      border-right: 3px solid $color-primary;
+      border-bottom: 0.188rem solid $color-primary;
+      border-right: 0.188rem solid $color-primary;
       transform: rotate(-45deg);
-      margin-left: -6px;
+      margin-left: -0.375rem;
       display: inline-block;
       vertical-align: middle;
-      margin-top: -1px;
+      margin-top: -0.063rem;
     }
   }
 }

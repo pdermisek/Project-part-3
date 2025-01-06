@@ -21,7 +21,7 @@
 
 .tabs__content {
   padding-top: $gutter;
-  border-top: 2px solid $color-primary;
+  border-top: 0.125rem solid $color-primary;
 
   & > div {
     display: none;
@@ -33,7 +33,7 @@
 
   @include breakpoint ($medium) {
     flex-basis: 70vw;
-    border-bottom: 2px solid $color-primary;
+    border-bottom: 0.125rem solid $color-primary;
     border-top: 0;
     padding-top: 0;
   }

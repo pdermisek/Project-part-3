@@ -1,10 +1,10 @@
 .news-section {
-    padding: 60px 0px;
-    // display: grid;
+    padding: 3.75rem 0rem;
+    // display: grid;žž
     // grid-template-columns: 708px;
     // justify-content: center;
     display: grid;
-    grid-row-gap: 48px;
+    grid-row-gap: 3rem;
   
     &__title {
       @include section-title-medium;
@@ -13,7 +13,7 @@
   
   .news-section__title--big {
     @include section-title-big;
-    padding-bottom: 48px;
+    padding-bottom: 3rem;
     margin: 0;
   }
   
@@ -21,13 +21,13 @@
     display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: repeat(12, calc(100% / 12));
-    grid-column-gap: 24px;
+    grid-column-gap: 1.5rem;
     justify-content: center;
   
     img {
       // width: 342px;
-      width: 342px;
-      height: 342px;
+      width: 21.375rem;
+      height: 21.375rem;
       grid-column: span 3/7;
       justify-self: end;
     }
@@ -38,10 +38,12 @@
     flex-direction: column;
     justify-content: space-between;
     grid-column: span 2;
+    width: 21.375rem;
+    margin-bottom: 0;
   
     &__divider {
       display: flex;
-      gap: 24px;
+      gap: 1.5rem;
       flex-direction: column;
     }
   
@@ -51,7 +53,7 @@
       text-align: left;
       color: rgba(0, 0, 0, 0.8);
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-style: normal;
       font-weight: 700;
       line-height: 120%; /* 28.8px */
@@ -63,10 +65,11 @@
       // @include paragraph-normal;
       color: rgba(0, 0, 0, 0.8);
       font-family: Source Sans Pro;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;
       line-height: 160%; /* 28.8px */
+      margin-bottom: 2.4rem;
     }
   }
   
@@ -74,23 +77,26 @@
     text-align: center;
     display: flex;
     justify-content: center;
+
+   
     .section__button {
       color: #ffffff;
       text-align: center;
       background-color: #0077ae;
-      width: 395px;
+      width: 24.688rem;
       text-align: center;
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
-      height: 54px;
+      height: 3,375rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      text-align: center; 
+      padding: 0.75rem 1.5rem 0.75rem 1.5rem;
     }
   }
   
@@ -98,17 +104,16 @@
   
   .posts-wrapper {
     display: grid;
-    grid-row-gap: 48px;
+    grid-row-gap: 3rem;
   }
   
   .post {
     display: grid;
-  
     justify-content: center;
     align-items: center;
     justify-items: center;
   
-    grid-row-gap: 24px;
+    grid-row-gap: 1.5rem;
   
     grid-template-columns: repeat(14, calc(100% / 14));
   
@@ -117,7 +122,7 @@
       justify-content: center;
       align-items: center;
       grid-column: span 6/10;
-      grid-row-gap: 16px;
+      grid-row-gap: 1rem;
   
       h5,
       h4,
@@ -128,9 +133,9 @@
   
       p {
         font-family: "Source Sans Pro", sans-serif;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
-        line-height: 29px;
+        line-height: 1.813rem;
         letter-spacing: 0em;
         text-align: left;
       }
@@ -142,13 +147,13 @@
     justify-content: center;
     align-items: center;
     grid-column: span 6/11;
-    grid-row-gap: 16px;
+    grid-row-gap: 1rem;
   
     img {
       width: 100%;
       grid-column: span 6/10;
   
-      height: 342px;
+      height: 21.375rem;
       align-self: stretch;
       object-fit: cover;
     }
@@ -156,14 +161,15 @@
     &__title {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 0.75rem;
+      width: 44.25rem;
   
       grid-column: span 6/10;
       // padding-bottom: 24px;
       h1 {
         color: rgba(0, 0, 0, 0.8);
         font-family: "Source Sans Pro", sans-serif;
-        font-size: 36px;
+        font-size: 2.25rem;
         font-style: normal;
         font-weight: 700;
         line-height: 120%; /* 43.2px */
@@ -171,9 +177,9 @@
   
       p {
         font-family: "Source Sans Pro", sans-serif;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 400;
-        line-height: 22px;
+        line-height: 1.375rem;
         letter-spacing: 0em;
         text-align: left;
       }
@@ -182,7 +188,7 @@
     P {
       color: rgba(0, 0, 0, 0.6);
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 21.6px */
@@ -193,9 +199,10 @@
     grid-column: span 6/11;
     color: #000;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 28.8px */
+    width: 44.25rem;
   }
   

@@ -74,11 +74,11 @@ $color-alert            : #f44336;
 ** BREAKPOINTS
 \*------------------------------------*/
 
-$small: 340px;
-$medium: 640px;
-$large: 1024px;
-$xlarge: 1200px;
-$xxlarge: 1440px;
+$small: 21.25rem;
+$medium: 40rem;
+$large: 64rem;
+$xlarge: 75rem;
+$xxlarge: 90rem;
 
 $breakpoints: (
   small   : $small,
@@ -118,7 +118,7 @@ $button-icon--size: 1.5rem;
 
 $input-radius: 0.5rem;
 $input-padding: 0.5rem;
-$input-border: 1px solid $color-gray--light;
+$input-border: 0.063rem solid $color-gray--light;
 
 
 
@@ -152,7 +152,7 @@ $font-weights: (
 
 $base-font-family: 'Raleway', sans-serif;
 $base-font-weight: $font-weight--regular;
-$base-font-size: 16px;
+$base-font-size: 1rem;
 $base-line-height: 1.6;
 $base-font-color: $black;
 

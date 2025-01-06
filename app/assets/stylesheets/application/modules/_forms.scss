@@ -61,7 +61,7 @@
 
 .form__field--error {
   .input, .textarea {
-    border: 1px solid $color-alert;
+    border: 0.063rem solid $color-alert;
     transition: $transition-time;
     outline: 0;
   }

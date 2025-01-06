@@ -30,7 +30,7 @@
 }
 
 .toolkit__navigation-separator {
-  height: 1px;
+  height: 0.063rem;
   width: 100%;
   background-color: $color-gray--light;
   margin-top: 1/4*$gutter;
@@ -38,7 +38,7 @@
 }
 
 .toolkit__separator {
-  height: 1px;
+  height: 0.063rem;
   width: 100%;
   background-color: $color-gray--light;
   margin-top: 1/4*$gutter;
@@ -63,7 +63,7 @@
 
 .toolkit__nav--user-wrapper {
   position: relative;
-  height: 300px;
+  height: 18.75rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -73,7 +73,7 @@
 }
 
 .toolkit__subheadline {
-  border-left: 2px solid $color-primary;
+  border-left: 0.125rem solid $color-primary;
   padding-left: 0.5 * $gutter;
 }
 
@@ -92,7 +92,7 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  height: 50px;
+  height: 3.125rem;
 }
 
 .toolkit__color-box--primary {
@@ -172,7 +172,7 @@
 
 .toolkit__icon {
   width: 10%;
-  max-height: 64px;
+  max-height: 4rem;
   padding: 1/4*$gutter;
   object-fit: contain;
 }

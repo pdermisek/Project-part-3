@@ -49,18 +49,18 @@
   width: 49%;
   text-align: center;
   padding-right: 1%;
-  border: 1px solid $color-secondary;
+  border: 0.063rem solid $color-secondary;
 }
 .st-val {
   width: 49%;
   padding-left: 1%;
-  border: 1px solid $color-secondary;
+  border: 0.063rem solid $color-secondary;
 }
 
 .stacktable.large-only { display: table; }
 .stacktable.small-only { display: none; }
 
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .stacktable.large-only { display: none; }
   .stacktable.small-only { display: table; }
 }

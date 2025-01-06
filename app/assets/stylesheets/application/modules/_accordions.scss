@@ -70,7 +70,6 @@
 // }
 
 .accordion__item {
-  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -79,11 +78,11 @@
   // display: flex;
   // justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .faq-underline {
-  height: 1px;
+  height: 0.063rem;
   width: 100%;
   transition: width 0.3s ease-in-out;
 }
@@ -95,6 +94,6 @@
 
 .js-accordion__body {
   display: none;
-  padding: 10px;
+  padding: 0.625rem;
   background-color: #ffffff;
 }
